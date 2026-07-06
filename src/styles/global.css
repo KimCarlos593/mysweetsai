@@ -1,0 +1,112 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background: #080808;
+  color: white;
+}
+
+/* 通用容器 */
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 40px;
+}
+
+/* Header */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background: rgba(8,8,8,.88);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid #222;
+  z-index: 1000;
+}
+
+.site-header .container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  height:80px;
+}
+
+/* Logo */
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:white;
+  font-size:26px;
+  font-weight:700;
+}
+
+.logo-mark{
+  color:#ff008c;
+}
+
+/* Navigation */
+
+.nav{
+  display:flex;
+  gap:36px;
+}
+
+.nav a{
+  color:#ddd;
+  text-decoration:none;
+  transition:.25s;
+}
+
+.nav a:hover{
+  color:#ff008c;
+}
+
+/* Right Buttons */
+
+.actions{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.small-btn{
+  background:#1a1a1a;
+  color:white;
+  border:none;
+  padding:8px 16px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.login{
+  color:white;
+  text-decoration:none;
+}
+
+.start{
+  background:#ff008c;
+  color:white;
+  text-decoration:none;
+  padding:10px 20px;
+  border-radius:12px;
+  font-weight:600;
+  transition:.25s;
+}
+
+.start:hover{
+  background:#ff2ca0;
+}
