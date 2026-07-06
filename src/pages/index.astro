@@ -1,11 +1,207 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>MySweets AI - Create Stunning AI Videos in Seconds</title>
+    <meta
+      name="description"
+      content="MySweets AI helps you create stunning AI-generated videos from images and prompts in seconds."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <main class="page">
+      <section class="hero">
+        <div class="badge">AI Video Generator</div>
+
+        <h1>Create Stunning AI Videos in Seconds</h1>
+
+        <p class="subtitle">
+          Turn images and prompts into beautiful AI-generated videos for TikTok,
+          Instagram Reels, YouTube Shorts, and Telegram.
+        </p>
+
+        <div class="buttons">
+          <a href="#tools" class="primary">Generate Now</a>
+          <a href="#how-it-works" class="secondary">How It Works</a>
+        </div>
+      </section>
+
+      <section id="tools" class="section">
+        <h2>Popular AI Video Tools</h2>
+
+        <div class="cards">
+			<a class="card" href="/ai-hug-video-generator">
+			<h3>AI Hug Video</h3>
+			<p>Create emotional AI hug videos from photos.</p>
+			</a>
+
+          <div class="card">
+            <h3>AI Kiss Video</h3>
+            <p>Generate romantic AI video effects with cinematic style.</p>
+          </div>
+
+          <div class="card">
+            <h3>AI Dance Video</h3>
+            <p>Transform portraits into fun short-form dance videos.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="section">
+        <h2>How It Works</h2>
+
+        <div class="steps">
+          <div>
+            <span>01</span>
+            <h3>Upload Image</h3>
+            <p>Choose a clear photo or portrait.</p>
+          </div>
+
+          <div>
+            <span>02</span>
+            <h3>Select Style</h3>
+            <p>Pick an AI video effect or enter your prompt.</p>
+          </div>
+
+          <div>
+            <span>03</span>
+            <h3>Generate Video</h3>
+            <p>Preview, download, and share your video.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #08000f;
+    color: white;
+  }
+
+  .page {
+    min-height: 100vh;
+    background:
+      radial-gradient(circle at top right, rgba(255, 20, 147, 0.35), transparent 35%),
+      radial-gradient(circle at bottom left, rgba(120, 70, 255, 0.25), transparent 30%),
+      #08000f;
+  }
+
+  .hero {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 120px 24px 80px;
+    text-align: center;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid rgba(255, 20, 147, 0.5);
+    border-radius: 999px;
+    color: #ff4fc3;
+    margin-bottom: 24px;
+  }
+
+  h1 {
+    font-size: 64px;
+    line-height: 1.05;
+    margin: 0;
+  }
+
+  .subtitle {
+    max-width: 720px;
+    margin: 24px auto 0;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #d8cde6;
+  }
+
+  .buttons {
+    margin-top: 36px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .buttons a {
+    text-decoration: none;
+    padding: 14px 22px;
+    border-radius: 12px;
+    font-weight: bold;
+  }
+
+  .primary {
+    background: #ff1493;
+    color: white;
+  }
+
+  .secondary {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: white;
+  }
+
+  .section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 24px;
+  }
+
+  .section h2 {
+    font-size: 36px;
+    margin-bottom: 28px;
+  }
+
+  .cards,
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .card,
+  .steps div {
+			.card {
+		display: block;
+		text-decoration: none;
+		color: white;
+		transition: transform 0.2s ease, border-color 0.2s ease;
+		}
+
+		.card:hover {
+		transform: translateY(-4px);
+		border-color: rgba(255, 20, 147, 0.6);
+		}
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    padding: 24px;
+  }
+
+  .steps span {
+    color: #ff4fc3;
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 42px;
+    }
+
+    .cards,
+    .steps {
+      grid-template-columns: 1fr;
+    }
+
+    .buttons {
+      flex-direction: column;
+    }
+  }
+</style>
