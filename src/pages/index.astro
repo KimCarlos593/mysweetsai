@@ -1,18 +1,8 @@
 ---
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>MySweets AI - Create Stunning AI Videos in Seconds</title>
-    <meta
-      name="description"
-      content="MySweets AI helps you create stunning AI-generated videos from images and prompts in seconds."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-
-  <body>
+<MainLayout>
     <main class="page">
       <section class="hero">
         <div class="badge">AI Video Generator</div>
@@ -75,8 +65,7 @@
         </div>
       </section>
     </main>
-  </body>
-</html>
+</MainLayout>
 
 <style>
   body {
@@ -166,25 +155,25 @@
     gap: 18px;
   }
 
-  .card,
-  .steps div {
-			.card {
-		display: block;
-		text-decoration: none;
-		color: white;
-		transition: transform 0.2s ease, border-color 0.2s ease;
-		}
+	.card,
+	.steps div{
+		background:rgba(255,255,255,.08);
+		border:1px solid rgba(255,255,255,.12);
+		border-radius:20px;
+		padding:24px;
+	}
 
-		.card:hover {
-		transform: translateY(-4px);
-		border-color: rgba(255, 20, 147, 0.6);
-		}
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 20px;
-    padding: 24px;
-  }
+	.card{
+		display:block;
+		text-decoration:none;
+		color:white;
+		transition:.25s;
+	}
 
+	.card:hover{
+		transform:translateY(-5px);
+		border-color:#ff1493;
+	}
   .steps span {
     color: #ff4fc3;
     font-weight: bold;
