@@ -1,0 +1,110 @@
+<section class="tutorials">
+  <div class="section-head">
+    <span>Learn</span>
+    <h2>AI Creation Tutorials</h2>
+    <p>Step-by-step guides for creating AI images, AI videos, long videos, and special pictures.</p>
+  </div>
+
+  <div class="tutorial-grid">
+    <a class="tutorial-card" href="/learn">
+      <strong>01</strong>
+      <h3>How to Generate AI Videos</h3>
+      <p>Learn the basic workflow from upload to final video export.</p>
+    </a>
+
+    <a class="tutorial-card" href="/learn">
+      <strong>02</strong>
+      <h3>How to Generate AI Pictures</h3>
+      <p>Create high-quality images with prompts, styles, and presets.</p>
+    </a>
+
+    <a class="tutorial-card" href="/learn">
+      <strong>03</strong>
+      <h3>How to Create Long Videos</h3>
+      <p>Stitch multiple short AI clips into one continuous video.</p>
+    </a>
+
+    <a class="tutorial-card" href="/learn">
+      <strong>04</strong>
+      <h3>How to Make ID Photos</h3>
+      <p>Create clean passport-style or ID-style images quickly.</p>
+    </a>
+  </div>
+</section>
+
+<style>
+  .tutorials {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 24px;
+  }
+
+  .section-head {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+
+  .section-head span {
+    color: #ff1493;
+    font-weight: 700;
+  }
+
+  .section-head h2 {
+    font-size: 38px;
+    margin: 12px 0;
+  }
+
+  .section-head p {
+    color: #b8b8b8;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .tutorial-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .tutorial-card {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background: rgba(255,255,255,.07);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 22px;
+    padding: 28px;
+    transition: .25s;
+  }
+
+  .tutorial-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff1493;
+    background: rgba(255,20,147,.12);
+  }
+
+  .tutorial-card strong {
+    color: #ff1493;
+    font-size: 18px;
+  }
+
+  .tutorial-card h3 {
+    font-size: 24px;
+    margin: 14px 0 10px;
+  }
+
+  .tutorial-card p {
+    color: #b8b8b8;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .tutorial-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .section-head h2 {
+      font-size: 30px;
+    }
+  }
+</style>

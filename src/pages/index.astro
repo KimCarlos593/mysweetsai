@@ -1,45 +1,60 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import Hero from "../components/Home/Hero.astro";
+import QuickPrompt from "../components/Home/QuickPrompt.astro";
+import TutorialGrid from "../components/Home/TutorialGrid.astro";
+import DiscoverGrid from "../components/Home/DiscoverGrid.astro";
 ---
 
 <MainLayout>
+	<Hero />
+	<QuickPrompt />
+	<TutorialGrid />
+	<DiscoverGrid />
     <main class="page">
-      <section class="hero">
-        <div class="badge">AI Video Generator</div>
-
-        <h1>Create Stunning AI Videos in Seconds</h1>
-
-        <p class="subtitle">
-          Turn images and prompts into beautiful AI-generated videos for TikTok,
-          Instagram Reels, YouTube Shorts, and Telegram.
-        </p>
-
-        <div class="buttons">
-          <a href="#tools" class="primary">Generate Now</a>
-          <a href="#how-it-works" class="secondary">How It Works</a>
-        </div>
-      </section>
+      
 
       <section id="tools" class="section">
-        <h2>Popular AI Video Tools</h2>
+  <h2>Popular AI Tools</h2>
 
-        <div class="cards">
-			<a class="card" href="/ai-hug-video-generator">
-			<h3>AI Hug Video</h3>
-			<p>Create emotional AI hug videos from photos.</p>
-			</a>
+  <div class="cards">
+    <a class="card" href="/ai-hug-video-generator">
+      <span>🫂</span>
+      <h3>AI Hug Video</h3>
+      <p>Create emotional AI hug videos from photos.</p>
+    </a>
 
-          <div class="card">
-            <h3>AI Kiss Video</h3>
-            <p>Generate romantic AI video effects with cinematic style.</p>
-          </div>
+    <a class="card" href="/create">
+      <span>💋</span>
+      <h3>AI Kiss Video</h3>
+      <p>Generate romantic AI video effects.</p>
+    </a>
 
-          <div class="card">
-            <h3>AI Dance Video</h3>
-            <p>Transform portraits into fun short-form dance videos.</p>
-          </div>
-        </div>
-      </section>
+    <a class="card" href="/create">
+      <span>💃</span>
+      <h3>AI Dance Video</h3>
+      <p>Transform portraits into short dance videos.</p>
+    </a>
+
+    <a class="card" href="/create">
+      <span>🎬</span>
+      <h3>AI Long Video</h3>
+      <p>Stitch clips into one continuous video.</p>
+    </a>
+
+    <a class="card" href="/create">
+      <span>🖼️</span>
+      <h3>AI Image Generator</h3>
+      <p>Create stunning AI images from prompts.</p>
+    </a>
+
+    <a class="card" href="/create">
+      <span>🪪</span>
+      <h3>AI ID Photo</h3>
+      <p>Generate clean ID-style photos quickly.</p>
+    </a>
+  </div>
+</section>
 
       <section id="how-it-works" class="section">
         <h2>How It Works</h2>
@@ -86,42 +101,14 @@ import MainLayout from "../layouts/MainLayout.astro";
 	  padding-bottom: 40px;
   }
 
-  .hero {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 60px 24px 45px;
-    text-align: center;
-  }
-
-  .badge {
-    display: inline-block;
-    padding: 8px 16px;
-    border: 1px solid rgba(255, 20, 147, 0.5);
-    border-radius: 999px;
-    color: #ff4fc3;
-    margin-bottom: 24px;
-  }
-
+  
   h1 {
     font-size: 64px;
     line-height: 1.05;
     margin: 0;
   }
 
-  .subtitle {
-    max-width: 720px;
-    margin: 24px auto 0;
-    font-size: 20px;
-    line-height: 1.6;
-    color: #d8cde6;
-  }
 
-  .buttons {
-    margin-top: 36px;
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-  }
 
   .buttons a {
     text-decoration: none;
@@ -167,11 +154,17 @@ import MainLayout from "../layouts/MainLayout.astro";
 	}
 
 	.card{
+		min-height: 130px;
 		display:block;
 		text-decoration:none;
 		color:white;
 		transition:.25s;
 	}
+	.card span {
+		font-size: 28px;
+		display: block;
+		margin-bottom: 14px;
+}
 
 	.card:hover{
 		transform:translateY(-5px);

@@ -1,0 +1,119 @@
+<section class="discover">
+  <div class="section-head">
+    <span>Discover</span>
+    <h2>Explore Trending AI Creations</h2>
+    <p>Browse popular AI video styles, image ideas, prompt scenes, and creator inspirations.</p>
+  </div>
+
+  <div class="discover-grid">
+    <a class="discover-card large" href="/discover">
+      <span>🔥</span>
+      <h3>Trending AI Videos</h3>
+      <p>See what creators are making with AI video tools.</p>
+    </a>
+
+    <a class="discover-card" href="/discover">
+      <span>⭐</span>
+      <h3>Editor's Picks</h3>
+      <p>Selected high-quality AI image and video examples.</p>
+    </a>
+
+    <a class="discover-card" href="/discover">
+      <span>🎨</span>
+      <h3>Best Prompt Ideas</h3>
+      <p>Find ready-to-use prompts for different scenes.</p>
+    </a>
+
+    <a class="discover-card" href="/discover">
+      <span>📈</span>
+      <h3>Popular Styles</h3>
+      <p>Explore the most used AI creation styles.</p>
+    </a>
+  </div>
+</section>
+
+<style>
+  .discover {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 24px;
+  }
+
+  .section-head {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+
+  .section-head span {
+    color: #ff1493;
+    font-weight: 700;
+  }
+
+  .section-head h2 {
+    font-size: 38px;
+    margin: 12px 0;
+  }
+
+  .section-head p {
+    color: #b8b8b8;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .discover-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 18px;
+  }
+
+  .discover-card {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background: rgba(255,255,255,.07);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 22px;
+    padding: 26px;
+    min-height: 180px;
+    transition: .25s;
+  }
+
+  .discover-card.large {
+    grid-row: span 2;
+    min-height: 380px;
+    background:
+      radial-gradient(circle at top right, rgba(255,20,147,.35), transparent 40%),
+      rgba(255,255,255,.08);
+  }
+
+  .discover-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff1493;
+  }
+
+  .discover-card span {
+    font-size: 32px;
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .discover-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .discover-card p {
+    color: #b8b8b8;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 900px) {
+    .discover-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .discover-card.large {
+      min-height: 220px;
+    }
+  }
+</style>
